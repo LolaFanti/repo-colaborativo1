@@ -2,7 +2,8 @@
 
 def registrar_habitos():
     '''
-
+    Pide al usuario ingresar una actividad y las agrega a una lista, hasta 
+    que el usaurio no quiera agregar mas actividades.
     Returns
     -------
     lista : List
@@ -22,6 +23,8 @@ def registrar_habitos():
 
 def  analizar_habitos(lista):
     '''
+    Recibe las actividades ingresadas por el usuario, crea un diccionario cuyas llaves 
+    son las actividades y las calves cantas veces estan.
 
     Parameters
     ----------
