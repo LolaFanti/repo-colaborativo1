@@ -1,7 +1,17 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Mar 12 13:45:43 2026
 
-@author: lola_
-"""
 
+def registrar_habitos():
+    actividad= input("Ingresar actividad: ")
+    lista= []
+    lista.append(actividad)
+    agregar= input("queres ptra?")
+    while agregar== "SI" :
+        actividad= input("Ingresar actividad: ")
+        lista= []
+        lista.append(actividad)
+        agregar= input("Queres agregar otra actividad?")
+    return lista
+        
+    
+    
+    
