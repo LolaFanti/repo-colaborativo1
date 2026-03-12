@@ -1,11 +1,19 @@
 
 
 def registrar_habitos():
+    '''
+
+    Returns
+    -------
+    lista : List
+        Contiene la lista de las actividades realizadas por el usuario.
+
+    '''
     actividad= input("Ingresar actividad: ")
     lista= []
     lista.append(actividad)
-    agregar= input("queres ptra?")
-    while agregar== "SI" :
+    agregar= input("Queres agregar otra actividad?")
+    while agregar== "si" :
         actividad= input("Ingresar actividad: ")
         lista= []
         lista.append(actividad)
@@ -13,6 +21,19 @@ def registrar_habitos():
     return lista
 
 def  analizar_habitos(lista):
+    '''
+
+    Parameters
+    ----------
+    lista : List
+        Contiene la lista de las actividades realizadas por el usuario.
+
+    Returns
+    -------
+    actividades : Dict
+        Contiene la cantidad de veces que se realizo cada actividad.
+
+    '''
     actividades = {}
     for act in lista:
         if act not in actividades.keys():
