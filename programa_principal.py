@@ -1,1 +1,4 @@
 import funciones_habitos
+
+
+import funcion_registro
